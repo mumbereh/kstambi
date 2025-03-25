@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karambi Youth Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #004d99;
+            padding: 15px;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background: #004d99;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        footer {
+            background: #004d99;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .hero {
+            background: #e0f7fa;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #004d99;
+        }
+
+        .content-section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .content-section h2 {
+            color: #004d99;
+        }
+
+        .content-section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Karambi Youth Initiative</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="programs.html">Our Programs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="user-guide.html">User Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Welcome to Karambi Youth Initiative</h1>
+            <p>Dignity For Every Youth and Vulnerable Youth in Kasese District.</p>
+        </section>
+
+        <div class="container">
+            <div class="card">
+                <h2>Our Vision</h2>
+                <p>To have a free community with raised voices, freedom of expression, and self-sustainability through vocational activities to secure the future of the members of the community.</p>
+            </div>
+            <div class="card">
+                <h2>Our Mission</h2>
+                <p>To improve the livelihoods of the youth and stakeholders, especially school dropouts, vulnerable youth, orphans, and widows through vocational training, skill development, and economic empowerment.</p>
+            </div>
+            <div class="card">
+                <h2>Our Goal</h2>
+                <p>Transformation of the youth (school dropouts) and vulnerable groups through engagement in vocational activities, environmental and water conservation, and sensitization.</p>
+            </div>
+        </div>
+
+        <section class="content-section">
+            <h2>Our Organizational Objectives</h2>
+            <ul>
+                <li>Increase access to education for the youth and improve their literacy level.</li>
+                <li>Fight stigma against youth in the community.</li>
+                <li>Create awareness of youth potential to change negative community attitudes and raise self-esteem.</li>
+                <li>Facilitate processes that improve the economic status of youth, caretakers, and stakeholders.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Organizational Activities</h2>
+            <ul>
+                <li>Poverty eradication and encouraging income generation through vocational activities.</li>
+                <li>Promoting youth talents through music production.</li>
+                <li>Fighting for youth labor rights.</li>
+                <li>Raising awareness about the usefulness of youth in communities.</li>
+                <li>Sensitizing the masses on gender issues.</li>
+                <li>Providing guidance and counseling for youth and vulnerable groups.</li>
+                <li>Sensitizing on climate and environmental issues.</li>
+                <li>Promoting clean water conservation and encouraging water harvesting practices.</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Organizational Core Values</h2>
+            <ul>
+                <li>Mutual trust</li>
+                <li>Transparency</li>
+                <li>Active participation</li>
+                <li>Valuing commitments by youth and marginalized groups</li>
+                <li>Love and care for the youth</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Our Target Groups</h2>
+            <ul>
+                <li>Vulnerable youth (without discrimination)</li>
+                <li>Parents, guardians, and all stakeholders</li>
+                <li>School dropouts (Boys and Girls)</li>
+                <li>All members of the community</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Demographics We Focus On</h2>
+            <ul>
+                <li>Adolescent Girls</li>
+                <li>Young Women</li>
+                <li>Young Men</li>
+                <li>Adolescent Boys</li>
+                <li>Youth with Disabilities</li>
+                <li>Youth from Indigenous Populations</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Karambi Youth Initiative. All rights reserved.</p>
+        <p>Contact: kyouthinitiative150@gmail.com | karambiyouthinitiative@gmail.com</p>
+        <p>Phone: +256394812478 | +256787733381 | +256751234038</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
